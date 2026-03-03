@@ -6,15 +6,18 @@ VibeSafe guides the AI to use secure defaults, avoid secret leakage, and explain
 
 ## Why this exists
 
-Non-technical builders ship fast with AI help—but they often don’t know what a secret is, why API keys must stay server-side, or why hardcoding backend values is risky. They ship, and they leak.
+Non-technical builders ship fast with AI help, but they often don’t know what a secret is, why API keys must stay server-side, or why hardcoding backend values is risky. They ship, and they leak.
 
 **Before (unsafe):**  
-The AI might put a secret key in client code so “the app can call the API.” Anyone can open the app and copy the key.
+The AI might put a secret key in client code so “the app can call the API.” Anyone can open the app and copy the key.s
+
+![Real-world example: exposed database and data that should never be public](assets/database-leak-example.png)
 
 **After (with VibeSafe):**  
 The AI stores the key in an environment variable, creates a server-side route that uses it, and has the client call that route. The key never reaches the browser. The AI explains in plain language: “We keep this key on the server. If it were in the client, anyone could see and use it.”
 
-VibeSafe doesn’t block the AI—it **corrects** unsafe patterns and explains why in simple English.
+
+VibeSafe doesn’t block the AI, it **corrects** unsafe patterns and explains why in simple English.
 
 ---
 

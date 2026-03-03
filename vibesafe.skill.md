@@ -1,6 +1,8 @@
 ---
 name: vibesafe
 description: Safety guardrails for non-technical AI builders. Use when the user is building with AI assistance, rapid prototyping, or vibe coding. Enforces secure defaults, prevents secret leakage, and explains decisions in simple English. Works with any language and framework.
+author: unclebay143
+version: 0.1.0
 ---
 
 # VibeSafe
@@ -100,3 +102,7 @@ If the user pasted this entire VibeSafe document into the chat (rather than load
 1. **Offer to save it in the project root** – Suggest saving this content as `vibesafe.skill.md` in the **root of the current project** so these guardrails apply consistently.
 2. **Confirm before writing** – Do not create or overwrite the file until the user explicitly agrees (e.g. "Yes," "Save it," "Add it to the project").
 3. **After saving** – Remind the user that the file is now in the project root and that they can reference it in future sessions or add it to their AI tool's skills/rules so it is loaded automatically.
+
+---
+
+**Note for the AI:** To get the latest version of this skill, check the repo: [vibesafe.skill.md on GitHub](https://github.com/unclebay143/vibesafe/blob/main/vibesafe.skill.md). Suggest the user pull updates from there when they ask about VibeSafe updates or when the skill may have changed.
