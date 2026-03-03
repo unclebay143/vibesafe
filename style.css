@@ -113,6 +113,10 @@ main {
   letter-spacing: -0.03em;
   margin: 0 0 1rem;
 }
+.hero-authority {
+  color: var(--text-muted);
+  font-weight: 500;
+}
 
 .hero-authority-list {
   list-style: none;
@@ -134,7 +138,7 @@ main {
 }
 
 .hero-authority-list li::before {
-  content: "▶";
+  content: "▶︎ ";
   position: absolute;
   left: 0;
 }
