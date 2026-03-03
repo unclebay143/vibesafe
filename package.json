@@ -1,0 +1,18 @@
+{
+  "name": "vibesafe",
+  "version": "0.1.0",
+  "description": "Safety guardrails for AI-assisted coding when the user is non-technical. Prevents secret leakage and enforces secure defaults.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-org/vibesafe"
+  },
+  "keywords": [
+    "agent-skills",
+    "vibe-coding",
+    "security",
+    "non-technical",
+    "guardrails",
+    "skills"
+  ]
+}

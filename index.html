@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VibeSafe - Safety guardrails for non-technical AI builders</title>
+    <meta
+      name="description"
+      content="One file. No setup. Keeps your vibe coding safe—no leaked keys, no secrets in client code. Download and add to Cursor, v0, Lovable, or any AI coding tool."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <span class="logo">VibeSAFE</span>
+      <div class="header-actions">
+        <a
+          href="https://github.com/your-org/vibesafe"
+          target="_blank"
+          rel="noreferrer"
+          class="btn-github btn-github-header"
+          ><svg
+            width="18"
+            height="18"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+            ></path></svg
+          >Star on GitHub</a
+        >
+        <button
+          type="button"
+          class="theme-toggle"
+          aria-label="Toggle light/dark mode"
+        >
+          <span class="theme-toggle-icon" aria-hidden="true">☀</span>
+          <span class="theme-toggle-label">Light</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <p class="hero-tagline">Ship fast. Don't leak.</p>
+        <h1>
+          Safety guardrails for AI-assisted coding when you're non-technical
+        </h1>
+        <p class="hero-sub">
+          One file. No setup. Forces secure defaults and explains decisions in
+          plain English. Works with any language and framework.
+        </p>
+        <p class="hero-authority">
+          Prevents the most common beginner AI security mistake: exposing API
+          keys in frontend code.
+        </p>
+        <p class="hero-cta">
+          <a
+            href="vibesafe.skill.md"
+            download="vibesafe.skill.md"
+            class="btn-download"
+            >Download vibesafe.skill.md</a
+          >
+        </p>
+        <p class="hero-note">
+          Drag into Cursor, or paste into v0, Lovable, Replit, or any AI coding
+          tool.
+        </p>
+      </section>
+
+      <section class="who-for">
+        <h2>Who this is for</h2>
+        <ul class="who-for-list">
+          <li>Non-technical Founders building MVPs with AI</li>
+          <li>Non-technical Designers using AI to build Proof of Concepts</li>
+          <li>Non-technical solo builders using AI to build MVPs</li>
+          <li>Indie hackers prototyping fast with AI</li>
+        </ul>
+      </section>
+
+      <section class="problem">
+        <h2>Why it matters</h2>
+        <p>
+          Non-technical builders ship fast with AI, but often don't know what a
+          secret is, why API keys must stay server-side, or why hardcoding is
+          risky.
+        </p>
+        <p>They ship, and they leak.</p>
+        <figure class="problem-image">
+          <img
+            src="assets/database-leak-example.png"
+            alt="Screenshot of an exposed database interface with the text: Is this your Database?? — a cautionary example of leaked backend data."
+            width="800"
+            height="450"
+          />
+          <figcaption>
+            Real-world example: exposed database and data that should never be
+            public.
+          </figcaption>
+        </figure>
+        <div class="before-after">
+          <div class="card card-bad">
+            <strong>Before (unsafe)</strong>
+            <p>
+              AI puts your API key directly in browser code. Anyone can open
+              DevTools and steal it.
+            </p>
+          </div>
+          <div class="card card-good">
+            <strong>After (with VibeSafe)</strong>
+            <p>
+              AI keeps the key on the server, creates a secure route, and
+              explains why it did that.
+            </p>
+          </div>
+        </div>
+        <p class="philosophy">
+          VibeSafe doesn't block the AI, it <strong>corrects</strong> unsafe
+          patterns and explains why in simple English.
+        </p>
+      </section>
+
+      <section class="whats-inside">
+        <h2>What's in the file</h2>
+        <ul class="rules-list">
+          <li>
+            <strong>Core behavior</strong> - Assume non-technical user; safe
+            defaults; correct don't refuse; think ahead before
+            APIs/DB/auth/payments.
+          </li>
+          <li>
+            <strong>Secrets</strong> - No hardcoded keys; env vars; backend
+            proxy for client; placeholder keys only in examples.
+          </li>
+          <li>
+            <strong>Frontend-backend</strong> - No credentials or admin SDKs in
+            client; sensitive logic on server only.
+          </li>
+          <li>
+            <strong>Validation</strong> - Basic input validation, safe error
+            handling, no internal details to client.
+          </li>
+          <li>
+            <strong>Final safety check</strong> - Before responding: secrets
+            exposed? privileged logic in client? Refactor if not.
+          </li>
+        </ul>
+      </section>
+
+      <section class="how-to-use">
+        <h2>How to use</h2>
+        <p class="how-to-use-intro">
+          Download <code>vibesafe.skill.md</code>, then drag and drop it into
+          your platform. No pasting required.
+        </p>
+        <ul class="use-list">
+          <li>
+            <strong>Cursor</strong> - Drag the file into your project's
+            <code>.cursor/skills/</code>.
+          </li>
+          <li>
+            <strong>v0 / Lovable / Replit</strong> - Drag and drop the file into
+            the place where you add instructions or rules.
+          </li>
+          <li>
+            <strong>ChatGPT or other</strong> - Drag the file into the chat or
+            upload it where system instructions are set.
+          </li>
+        </ul>
+      </section>
+
+      <section class="cta-bottom">
+        <a
+          href="vibesafe.skill.md"
+          download="vibesafe.skill.md"
+          class="btn-download"
+          >Download vibesafe.skill.md</a
+        >
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <a
+          href="https://github.com/your-org/vibesafe"
+          target="_blank"
+          rel="noreferrer"
+          class="btn-github"
+          ><svg
+            width="18"
+            height="18"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+            ></path></svg
+          >Star on GitHub</a
+        >
+        <span class="footer-license">MIT License</span>
+      </div>
+    </footer>
+    <script>
+      (function () {
+        var STORAGE_KEY = "vibesafe-theme";
+        var btn = document.querySelector(".theme-toggle");
+        var icon = document.querySelector(".theme-toggle-icon");
+        var label = document.querySelector(".theme-toggle-label");
+
+        function getPreferred() {
+          return (
+            document.documentElement.getAttribute("data-theme") ||
+            (matchMedia("(prefers-color-scheme: light)").matches
+              ? "light"
+              : "dark")
+          );
+        }
+
+        function apply(theme) {
+          document.documentElement.setAttribute(
+            "data-theme",
+            theme === "light" ? "light" : "",
+          );
+          if (icon) icon.textContent = theme === "light" ? "☀" : "🌙";
+          if (label) label.textContent = theme === "light" ? "Light" : "Dark";
+          try {
+            localStorage.setItem(STORAGE_KEY, theme);
+          } catch (e) {}
+        }
+
+        function toggle() {
+          var next =
+            document.documentElement.getAttribute("data-theme") === "light"
+              ? "dark"
+              : "light";
+          apply(next);
+        }
+
+        var saved = null;
+        try {
+          saved = localStorage.getItem(STORAGE_KEY);
+        } catch (e) {}
+        if (saved === "light" || saved === "dark") apply(saved);
+        else apply(getPreferred());
+
+        if (btn) btn.addEventListener("click", toggle);
+      })();
+    </script>
+  </body>
+</html>
