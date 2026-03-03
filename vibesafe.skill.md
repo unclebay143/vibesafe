@@ -1,8 +1,9 @@
 ---
 name: vibesafe
 description: Safety guardrails for non-technical AI builders. Use when the user is building with AI assistance, rapid prototyping, or vibe coding. Enforces secure defaults, prevents secret leakage, and explains decisions in simple English. Works with any language and framework.
-author: unclebigbay
-version: 0.1.0
+metadata:
+    author: unclebigbay
+    version: 0.1.0
 ---
 
 # VibeSafe
